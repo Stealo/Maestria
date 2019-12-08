@@ -50,6 +50,16 @@ table {
 
 /*FIN DU RESET*/
 
+/*TYPO*/
+
+@font-face {
+  font-family: 'Butler Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Butler Regular'), url('http://localhost:63342/Maestria/font/Butler_Regular.woff') format('woff');
+}
+
+
 body {
   background-color: #000000;
 }
@@ -59,12 +69,29 @@ p {
 }
 
 h1 {
-  font-size: 15px;
+  font-family: "Butler Regular", Serif;
 }
+
+h2 {
+  font-family: "Butler Regular", Serif;
+}
+
+h3 {
+  font-family: "Butler Regular", Serif;
+}
+
+h4 {
+  font-family: "Butler Regular", Serif;
+}
+
+h5 {
+  font-family: "Butler Regular", Serif;
+}
+
 
 /*NAVBAR*/
 
-.sidebar{
+.sidebar {
   height: 100vh;
   background-color: #0bbaa0;
   position: fixed !important;
@@ -81,7 +108,7 @@ h1 {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 500vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -98,12 +125,12 @@ h1 {
 }
 
 .one {
-  background: #efdefe;
+  background-image: url("http://localhost:63342/Maestria/img/acceuil.jpg");
   scroll-snap-align: start;
 }
 
 .two {
-  background: #a3f3d3;
+  background: #7F8C8D;
   scroll-snap-align: start;
 }
 
@@ -136,5 +163,16 @@ h1 {
 
 .show {
   opacity: 1;
+}
+
+/*HEADER*/
+
+.block_text_header {
+  position: absolute !important;
+}
+
+.text_header {
+  margin-top: 35%;
+  color: #ffffff;
 }
 
