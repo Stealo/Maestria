@@ -61,6 +61,14 @@ h1 {
   font-size: 15px;
 }
 
+/*NAVBAR*/
+.sidebar {
+  height: 100vh;
+  background-color: #0bbaa0;
+  position: fixed !important;
+  z-index: 1;
+}
+
 /*HORIZONTAL SCROLL*/
 .slide {
   width: 100vw;
@@ -83,22 +91,47 @@ h1 {
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
+  scroll-snap-type: x mandatory;
 }
 
 .one {
   background: #efdefe;
+  scroll-snap-align: start;
 }
 
 .two {
   background: #a3f3d3;
+  scroll-snap-align: start;
 }
 
 .three {
   background: #0bbaa0;
+  scroll-snap-align: start;
 }
 
 .four {
   background: #00dfdf;
+  scroll-snap-align: start;
+}
+
+/*ANIMATION*/
+.red-cube {
+  background: red;
+  margin: 0 autot;
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0;
+  width: 50vw;
+  margin: auto;
+  transition: 1.5s;
+}
+
+.show {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
