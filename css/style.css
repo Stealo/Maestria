@@ -87,7 +87,7 @@ h5 {
 /*NAVBAR*/
 .sidebar {
   height: 100vh;
-  background-color: #0bbaa0;
+  background-color: #ffffff;
   position: fixed !important;
   z-index: 1;
 }
@@ -163,7 +163,6 @@ h5 {
 }
 
 .text_header {
-  margin-top: 35%;
   color: #ffffff;
 }
 
@@ -175,6 +174,14 @@ h5 {
 
 .titre_artcom {
   font-size: 8vw;
+}
+
+/*LES ARTISTES*/
+.titre_artiste {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  right: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
