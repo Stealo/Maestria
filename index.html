@@ -8,10 +8,10 @@
     <title>Maestria</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="utils/ScrollMagic.min.js"></script>
+    <script src="utils/ScrollMagic.min.js" async></script>
 
-    <script src="js/scrypt.js" type="text/javascript"></script>
-    <script async src="js/jquery.min.js"></script>
+    <script src="js/scrypt.js" type="text/javascript" async></script>
+    <script src="js/jquery.min.js" async></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,19 +25,19 @@
     </div>
     <div>
         <a href="#accueil">
-            <p class="mt-5">Accueil</p>
+            <p class="mt-5 text-center">Accueil</p>
         </a>
         <a href="#oeuvres">
-            <p class="mt-5">Oeuvres</p>
+            <p class="mt-5 text-center">Oeuvres</p>
         </a>
         <a href="#equipe">
-            <p class="mt-5">Equipe</p>
+            <p class="mt-5 text-center">Equipe</p>
         </a>
-        <a href="#gallerie">
-            <p class="mt-5">Gallerie</p>
+        <a href="#galerie">
+            <p class="mt-5 text-center">Galerie</p>
         </a>
         <a href="#contact">
-            <p class="mt-5">Contact</p>
+            <p class="mt-5 text-center">Contact</p>
         </a>
     </div>
 
@@ -46,7 +46,7 @@
 <main class="outer-wrapper">
 
     <section class="wrapper">
-        <!--PAGE ACCEUIL-->
+        <!--PAGE ACCUEIL-->
         <div class="slide one row p-0 m-0" id="accueil">
 
             <div class="h-100 p-0 d-flex align-items-center col-4 offset-2 ">
@@ -54,6 +54,14 @@
             </div>
             <div class="block_text_header h-100 p-0 d-flex align-items-center col-3">
                 <h1 class="text_header p-0 col-3 offset-4 mt-5">Maestria association pour les nouveaux artistes</h1>
+            </div>
+
+            <div class="col-1 offset-2 position-absolute text_navigation_art">
+                <p class="text-center">
+                    <a href="#oeuvres">
+                        Découvrir>
+                    </a>
+                </p>
             </div>
 
         </div>
@@ -87,14 +95,19 @@
                     <h3 class="text-center">Brilliant Information Overload Pop Head</h3>
                 </div>
             </div>
+
+            <div class="col-1 offset-2 position-absolute text_navigation_art">
+                <p class="text-center">
+                    <a href="#equipe">
+                        L'équipe>
+                    </a>
+                </p>
+            </div>
         </div>
 
-        <div class="col-12 offset-11 position-absolute">
-            <p>découvrir</p>
-        </div>
         <!--PAGE EQUIPE-->
 
-        <div class="slide two row p-0 m-0 d-flex align-items-center" id="equipe">
+        <div class="slide three row p-0 m-0 d-flex align-items-center" id="equipe">
 
             <div class="col-lg-12 animation_text_equipe">
                 <h1 class="position-absolute col-lg-6 offset-lg-3 mt-5 titre_artcom">
@@ -102,15 +115,18 @@
                 </h1>
             </div>
 
-
-            <div class="row col-3 offset-2 h-100 mt-5">
+            <div class="row col-3 offset-2 h-75 mt-5 ">
                 <div class="col-12 row">
                     <div class="col-7">
-                        <img class="img-fluid" alt="" src="img/equipe1.png">
-                        <h1>John Doe</h1>
+                        <img class="img-fluid" alt="" src="img/equipe1.jpg">
+                        <h1 class="title_team">Eddy Don Marcel</h1>
                     </div>
-                    <div class="col-5">
-                        <p>texte de description</p>
+                    <div class="col-7 offset-6 position-absolute">
+                        <p class="titre_description">Description</p>
+                        <p class="text_description">Cubisme
+                            <br>Peintre favori: Iris Scott
+                            <br>Oeuvre favorite: Egyptian Triptych
+                        </p>
                     </div>
                 </div>
             </div>
@@ -118,11 +134,15 @@
             <div class="row col-3">
                 <div class="col-12 row">
                     <div class="col-7">
-                        <img class="img-fluid" alt="" src="img/equipe2.png">
-                        <h1>John Doe</h1>
+                        <img class="img-fluid" alt="" src="img/equipe2.jpg">
+                        <h1 class="title_team">Daisy Dameurch</h1>
                     </div>
-                    <div class="col-5">
-                        <p>texte de description</p>
+                    <div class="col-7 offset-6 position-absolute">
+                        <p class="titre_description">Description</p>
+                        <p class="text_description">Art Abstrait
+                            <br>Peintre favori: Salvador Dali
+                            <br>Oeuvre favorite: La vision de Tondale
+                        </p>
                     </div>
                 </div>
             </div>
@@ -130,90 +150,69 @@
             <div class="row col-3 h-25 mt-5">
                 <div class="col-12 row mt-5">
                     <div class="col-7">
-                        <img class="img-fluid" alt="" src="img/equipe3.png">
-                        <h1>John Doe</h1>
+                        <img class="img-fluid" alt="" src="img/equipe3.jpg">
+                        <h1 class="title_team">John Butler</h1>
                     </div>
-                    <div class="col-5">
-                        <p>texte de description</p>
+                    <div class="col-7 offset-6 position-absolute">
+                        <p class="titre_description">Description</p>
+                        <p class="text_description">Street Art
+                            <br>Peintre favori: Archimboldo
+                            <br>Oeuvre favorite: Egyptian Triptych
+                        </p>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-1 offset-2 position-absolute text_navigation_art">
+                <p class="">
+                    <a href="#galerie">
+                        La galerie>
+                    </a>
+                </p>
             </div>
 
         </div>
 
         <!--PAGE ARTISTE-->
 
-        <div class="slide three row m-0 p-0" id="gallerie">
+        <div class="slide four row m-0 p-0" id="galerie">
 
             <div class="col-lg-12 animation_text">
                 <h1 class="position-absolute col-lg-6 offset-lg-3 titre_artcom mt-5">
-                    >Gallerie<br> du partage
+                    Galerie<br> du partage
                 </h1>
             </div>
-            <div class="row col-12 mt-2">
+            <div class="row col-12 mt-2 mb-5">
 
                 <div class="row col-2 offset-3">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(1).jpg">
+                            <h4 class="titre_artiste">Marc Tilleul</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(1).jpg">
+                            <h4 class="titre_artiste">Agate Brunelle</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(2).jpg">
+                            <h4 class="titre_artiste">Nathalie Salmons</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row col-2 offset-3">
-                    <div class="col-12 row">
-                        <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-2">
-                    <div class="col-12 row">
-                        <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-2">
-                    <div class="col-12 row">
-                        <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row col-2">
-                    <div class="col-12 row">
-                        <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(2).jpg">
+                            <h4 class="titre_artiste">Marlon Rivard</h4>
                         </div>
                     </div>
                 </div>
@@ -221,32 +220,32 @@
                 <div class="row col-2 offset-3">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(3).jpg">
+                            <h4 class="titre_artiste">Émile Gaillou</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(3).jpg">
+                            <h4 class="titre_artiste">Christiane Grignon</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(4).jpg">
+                            <h4 class="titre_artiste">Bruno Fortier</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(4).jpg">
+                            <h4 class="titre_artiste">Ila Charette</h4>
                         </div>
                     </div>
                 </div>
@@ -254,47 +253,80 @@
                 <div class="row col-2 offset-3">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(5).jpg">
+                            <h4 class="titre_artiste">Odelette Deniger</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(5).jpg">
+                            <h4 class="titre_artiste">Olivier Cormier</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(6).jpg">
+                            <h4 class="titre_artiste">Delmar Gareau</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row col-2">
                     <div class="col-12 row">
                         <div class="col-10">
-                            <img class="img-fluid w-75 mt-3" alt="" src="img/equipe1.png">
-                            <h4 class="titre_artiste">John Doe</h4>
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(7).jpg">
+                            <h4 class="titre_artiste">Archaimbau Chenard</h4>
                         </div>
                     </div>
                 </div>
 
+                <div class="row col-2 offset-3">
+                    <div class="col-12 row">
+                        <div class="col-10">
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(6).jpg">
+                            <h4 class="titre_artiste">Fusberta Lesage</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-2">
+                    <div class="col-12 row">
+                        <div class="col-10">
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(7).jpg">
+                            <h4 class="titre_artiste">Vignette Quinn</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-2">
+                    <div class="col-12 row">
+                        <div class="col-10">
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_men(8).jpg">
+                            <h4 class="titre_artiste">Moore Alexandre</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-2">
+                    <div class="col-12 row">
+                        <div class="col-10">
+                            <img class="img-fluid w-75 mt-3" alt="" src="img/people/portrait_woman(8).jpg">
+                            <h4 class="titre_artiste">Searlait Marleau</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="slide four" id="contact">
-            <div style="height: 350px;"></div>
-            <div class="red-cube">ScrollMagic</div>
-            <div style="height: 350px;"></div>
-        </div>
+            <div class="col-1 offset-2 position-absolute text_navigation_art">
+                <p class="">
+                    <a href="#galerie">
+                        Mentions légales
+                    </a>
+                </p>
+            </div>
 
+        </div>
     </section>
-
 </main>
 
 <script async src="js/scrypt.js" type="text/javascript"></script>

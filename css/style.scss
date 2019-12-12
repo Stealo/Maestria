@@ -50,6 +50,8 @@ table {
 
 /*FIN DU RESET*/
 
+
+
 $rouge: #E74C3C;
 $noir: #2D3436;
 $gris: #ecf0f1;
@@ -112,7 +114,7 @@ h5 {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 500vw;
+  width: 400vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -129,7 +131,7 @@ h5 {
 }
 
 .one {
-  background-image: url("http://localhost:63342/Maestria/img/acceuil.jpg");
+  background-image: url("http://maestria-association.fr/img/acceuil.jpg");
   scroll-snap-align: start;
 }
 
@@ -140,12 +142,12 @@ h5 {
 }
 
 .three {
-  background: #0bbaa0;
+  background: #60A3BC;
   scroll-snap-align: start;
 }
 
 .four {
-  background: #00dfdf;
+  background: #38ADA9;
   scroll-snap-align: start;
 }
 
@@ -154,19 +156,19 @@ h5 {
 .animation_text {
   display: block;
   opacity: 0;
-  transition: 1.5s;
+  transition: 3s;
 }
 
 .animation_text_equipe {
   display: block;
   opacity: 0;
-  transition: 1.5s;
+  transition: 3s;
 }
 
 .animation_art_con {
   display: block;
   opacity: 0;
-  transition: 1.5s;
+  transition: 3s;
 }
 
 .show {
@@ -182,6 +184,22 @@ h5 {
 .text_header {
   color: $blanc;
   font-size: 500%;
+}
+
+.text_navigation{
+  bottom: 1%;
+  color: $blanc;
+  opacity: 0.8;
+  a{
+    color: $blanc;
+    border: none;
+  }
+  a:hover{
+    color: $blanc;
+    opacity: 0.7;
+    transition: 0.5s;
+    border: none;
+  }
 }
 
 /*ARTISTE*/
@@ -204,13 +222,49 @@ h5 {
   font-size: 9vw;
   opacity: 0.6;
   line-height: 54%;
+  color: $gris;
 }
+
+.text_navigation_art{
+  bottom: 1%;
+  color: $blanc;
+  opacity: 0.8;
+  a{
+    color: $blanc;
+    border: none;
+  }
+  a:hover{
+    color: $blanc;
+    opacity: 0.7;
+    transition: 0.5s;
+    border: none;
+  }
+}
+
+/*EQUIPE*/
+
+.title_team{
+  color: $blanc;
+  font-size: 25px !important;
+}
+
+.titre_description{
+  font-size: 20px;
+  color: $noir !important;
+  font-family: "Butler Regular", serif;
+}
+
+.text_description{
+  color: $noir !important;
+}
+
 
 /*LES ARTISTES*/
 
 .titre_artiste{
   position: absolute;
-  top: 60%;
+  bottom: 1%;
   width: 100%;
-  right: 50%;
+  right: 30%;
+  color: #FFFFFF;
 }
