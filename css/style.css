@@ -65,23 +65,23 @@ p {
 }
 
 h1 {
-  font-family: "Butler Regular", Serif;
+  font-family: "Butler Regular", Serif !important;
 }
 
 h2 {
-  font-family: "Butler Regular", Serif;
+  font-family: "Butler Regular", Serif !important;
 }
 
 h3 {
-  font-family: "Butler Regular", Serif;
+  font-family: "Butler Regular", Serif !important;
 }
 
 h4 {
-  font-family: "Butler Regular", Serif;
+  font-family: "Butler Regular", Serif !important;
 }
 
 h5 {
-  font-family: "Butler Regular", Serif;
+  font-family: "Butler Regular", Serif !important;
 }
 
 /*NAVBAR*/
@@ -123,8 +123,9 @@ h5 {
 }
 
 .two {
-  background: #B33939;
+  background: #954043;
   scroll-snap-align: start;
+  color: #ecf0f1;
 }
 
 .three {
@@ -138,18 +139,21 @@ h5 {
 }
 
 /*ANIMATION*/
-.red-cube {
-  background: red;
-  margin: 0 autot;
+.animation_text {
   display: block;
-  padding: 40px 0;
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
   opacity: 0;
-  width: 50vw;
-  margin: auto;
+  transition: 1.5s;
+}
+
+.animation_text_equipe {
+  display: block;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.animation_art_con {
+  display: block;
+  opacity: 0;
   transition: 1.5s;
 }
 
@@ -163,7 +167,8 @@ h5 {
 }
 
 .text_header {
-  color: #ffffff;
+  color: #FFFFFF;
+  font-size: 500%;
 }
 
 /*ARTISTE*/
@@ -172,8 +177,19 @@ h5 {
   margin-top: 50%;
 }
 
+.text_james {
+  bottom: 6% !important;
+}
+
+.text_damien {
+  bottom: 60% !important;
+  z-index: 2;
+}
+
 .titre_artcom {
-  font-size: 8vw;
+  font-size: 9vw;
+  opacity: 0.6;
+  line-height: 54%;
 }
 
 /*LES ARTISTES*/
